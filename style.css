@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --poppins:'Poppins', sans-serif;
+    --light-bg:#323647;
+    --dark-bg:#242734;
+    --orange:#EFA649;
+    --font-light:#E5E5E5;
+    --font-dark:#666875;
+    --cinza-escuro:#51555C;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body{
+    font-family: var(--poppins);
+    background-color: var(--light-bg);
+    font-weight: normal;
+}
+
+/* Primeira parte desktop e tablet */
+main{
+    display:flex;
+    justify-content: center;
+    height: 720px;
+    margin: 0 8%;
+    
+}
+div#logo{
+    height: 4vw;
+    width: 4vw;
+    background-color: orange;
+    border-radius: 0 32px 32px 32px;
+}
+
+#section-01{
+    width: 55%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#section-02{
+    width: 35%;
+    padding:  5%;
+
+}
+
+.titulo{
+    font-size: 7vw;
+    color: var(--font-light);
+    font-weight: 600;
+    line-height: 7vw;
+    margin-top: 0.6em;
+    margin-bottom: 0.4em;
+}
+.traco{
+    width: 4vw;
+    height: 11.25px;
+    background: #EFA649
+}
+
+
+.icones{
+    margin-top: 7em;
+}
+
+.icones-1{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;  
+}
+
+nav{
+    display: flex;
+    font-size: 2vw;
+}
+
+nav>a{
+    margin: 0 1vw;
+    color: var(--font-dark);
+    text-decoration: none;
+    
+}
+
+h2{
+    margin-top: 80px;
+    font-size: 1.3vw;
+    color: var(--font-dark);
+}
+
+h3{
+    font-size: 2vw;
+    line-height: 100%;
+    color: var(--font-light);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+#section-02>.text{
+    margin-top: 30px;
+}
+#section-02>.link{
+    margin-top: 45px;
+}
+
+.text{
+    font-size: 1.3vw;
+    color: var(--font-dark);
+    font-weight: normal;
+}
+
+.link{
+    font-size: 1.7vw;
+    color: var(--orange);
+}
+
+/* Segunda parte desktop e Tablet */
