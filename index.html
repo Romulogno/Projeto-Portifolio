@@ -13,91 +13,130 @@
     <main>
         <section id="section-01">
             <a href="#"><div id="logo"></div></a>
-            <h1 class="titulo">Romulo Oliveira.</h1>
+            <h1 class="titulo-big">Romulo Oliveira.</h1>
             <div class="traco"></div>
             <div class="icones">
                 <!-- Take out the inline styles after finish the html document-->
-                <a href=""><img src="images/003-github.svg" alt="github icon" class="icones-1"></a>
-                <a href=""><img src="images/001-instagram.svg" alt="instagram icon" class="icones-1"></a>
-                <a href=""><img src="images/002-linkedin.svg" alt="linkedin icon" class="icones-1"></a>
+                <a href="https://github.com/Romulogno" target="_blank"><img src="images/003-github.svg" alt="github icon" class="icones-1"></a>
+                <a href="https://www.instagram.com/romuloskaium/" target="_blank"><img src="images/001-instagram.svg" alt="instagram icon" class="icones-1"></a>
+                <a href="https://www.linkedin.com/in/romulognoliveira/" target="_blank"><img src="images/002-linkedin.svg" alt="linkedin icon" class="icones-1"></a>
+                
             </div>
         </section>
         <section id="section-02">
             <header>
+                <!--Adicinar ul e li no nav para semantica-->
                 <nav>
                     <a href="#" style="color:#E5E5E5 ;">Portifolio</a>
                     <a href="#">About</a>
                     <a href="#">Contact</a>
                 </nav>
             </header>
-            <h2>-Introduction</h2>
-            <h3>Frond End Developer and IT support Technician, based in Ireland.</h3>
+            <h2 class="titulo-small">-Introduction</h2>
+            <h3 class="titulo-med">Frond End Developer and IT support Technician, based in Ireland.</h3>
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedi ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda nostrum est a, natus odit ullam non laborum qui autem facilis voluptatibus</p>
-            <p class="link">My Story -></p>
+            <a href="#">
+                <p class="link">My Story -></p>
+            </a>
+
         </section>
     </main>
     
-    <div>
+    <div id="part-2">
         <section>
-            <h2>-Contact.</h3>
-            <h3>Any type of Query & Discution</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore dolor, laudantium omnis.</p>
-            <p>romulognoliveira@gmail.com  -></p>
+            <h2 class="titulo-small">-Contact.</h2>
+            <h3 class="titulo-med">Any type of Query & <br/>Discution</h3>
+            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore dolor, laudantium omnis.</p>
+            <a href="#">
+                <p class="link">romulognoliveira@gmail.com  -></p>
+            </a>
         </section>
         <section>
-            <h3>You can’t use up creativity,the more you use, more you have in your significant mind.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ducimus earum dolor.</p>
-            <p>4 Years of Experience.</p>
-            <p>187 Satisfied Clients.</p>
+            <h3 class="titulo-med">You can’t use up creativity, the more you use, more you have in your significant mind.</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ducimus earum dolor.</p>
+            <div class="block-side">
+                <div class="text-med"><h4 class="link">4</h4><p > Years of <br/> Experience.</p></div>
+                <div class="text-med"><h4 class="link">187</h4><p > Satisfied <br/> Clients.</p></div>
+            </div>
         </section>
     </div>
-    <div>Card 1</div>
-    <div>Card 2</div>
-    <div>Card 3</div>
-    <div>
-        <div>
-            <h3>- Portifolio</h3>
-            <p>All Creative Works,<br>
-                Selected Projects.
-            </p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium quidem iure similique</p>
-            <p>Explore more -></p>
-            <div>Projeto 1</div>
+
+    <div id="mini-card-container">
+        <div class="mini-card first-mini-card" >
+            <img src="images/cube-black.svg" alt="cube">
+            <div>
+                <p class="text-med">Product <br/>Desinger.</p>
+                <p class="text">125 projects.</p>
+            </div>
         </div>
-        <div>
-            <div>Projeto 2</div>
-            <div>Projeto 3</div>
+        <div class="mini-card">
+            <img src="images/pen-tool.svg" alt="pen">
+            <div>
+                <p class="text-med">Branding <br/> Desinger.</p>
+                <p class="text">0 Projects</p>
+            </div>
+        </div>
+        <div class="mini-card">
+            <img src="images/js-format.svg" alt="JavaScript icone" > 
+            <div>
+                <p class="text-med">JavaScript <br/> Developer.</p>
+                <p class="text">10 Projects.</p>
+            </div>
         </div>
     </div>
-  <div>
-      <section>
-        <p>
-        Got a project <br>
+
+    <div class="port-container">
+        <div class="div">
+            <section>
+                <h3 class="titulo-small">- Portifolio</h3>
+                <p class="titulo-med">All Creative Works,<br>
+                    Selected Projects.
+                </p>
+                <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium quidem iure similique</p>
+                <a href="#">
+                    <p class="link">Explore more -></p>
+                </a>
+            </section>
+            <div class="card"></div>
+        </div>
+        <div class="div" >
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </div>
+  <div id="form">
+      <section class="sec-form-left">
+        <h3 class="titulo-med">
+        Got a project? <br>
         Let's Talk
-        </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore totam officia.</p>
-      <p>romulognoliveira@gmail.com</p>
+        </h3>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore totam officia.</p>
+      <a href="#">
+          <p class="link">romulognoliveira@gmail.com</p>
+      </a>
     </section>
-      <section>
-        <p>Estimate your project? <br>
+      <section class="sec-form-right">
+        <h3 class="titulo-med">Estimate your project? <br>
             Let me Know here.
-        </p>
-        <form action="#">
-            <label for="nome">What's your name?</label>
+        </h3>
+        <form action="#" class="form-container">
+            <label for="nome" class="text-med">What's your name?</label>
             <input type="text" name="nome">
-            <label for="email">Your Fancy e-mail</label>
+            <label for="email" class="text-med">Your Fancy e-mail</label>
             <input type="email" name="email" id="email">
-            <label for="file">Tell me about your project -> <img src="images/attachment_black_24dp.svg" alt="attachment" style="width: 25px; height: 25px;"></label>
-            <input type="file" name="file" id="file">
+            <div class="file-container">
+                <label for="file" class="text-med">Tell me about your project <img src="images/attach.svg" alt="attach icon" style="width: 16px;"></label>
+                <input type="file" name="file" id="file" >
+            </div>
         </form>
       </section>
   </div>
-  <footer>
-    <a href="#"><span>LOGO</span></a>
-    <p>Thanks for Scrolling. <span>That is all Folks.</span></p>
-    <img src="images/github.svg" alt="github icon" style="width: 25px; height: 25px;">
-    <img src="images/instagram.svg" alt="instagram icon" style="width: 25px; height: 25px;">
-    <img src="images/linkedin.svg" alt="linkedin icon" style="width: 25px; height: 25px;">
+  <footer class="footer">
+    <a href="#"><div id="logo"></div></a>
+    <p class="text-med" style="font-weight: 600;">Thanks for Scrolling. <span>That is all Folks.</span></p>
+    <a href="https://github.com/Romulogno" target="_blank"><img src="images/003-github.svg" alt="github icon" style="width: 25px; height: 25px;"></a>
+    <a href="https://www.instagram.com/romuloskaium/" target="_blank"><img src="images/001-instagram.svg" alt="instagram icon" style="width: 25px; height: 25px;"></a>
+    <a href="https://www.linkedin.com/in/romulognoliveira/" target="_blank"><img src="images/002-linkedin.svg" alt="linkedin icon" style="width: 25px; height: 25px;"></a>
   </footer>
     
 </body>

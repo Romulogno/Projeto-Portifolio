@@ -4,10 +4,13 @@
     --poppins:'Poppins', sans-serif;
     --light-bg:#323647;
     --dark-bg:#242734;
-    --orange:#EFA649;
+    --detalhes:rgb(83, 253, 210);
     --font-light:#E5E5E5;
     --font-dark:#666875;
     --cinza-escuro:#51555C;
+    --azulpsina:rgb(83, 253, 216);
+    --laranja:#EFA649;
+    
 }
 
 *{
@@ -20,20 +23,22 @@ body{
     font-family: var(--poppins);
     background-color: var(--light-bg);
     font-weight: normal;
+    
 }
 
 /* Primeira parte desktop e tablet */
 main{
     display:flex;
     justify-content: center;
-    height: 720px;
+    height: 49vw;
     margin: 0 8%;
+    
     
 }
 div#logo{
     height: 4vw;
     width: 4vw;
-    background-color: orange;
+    background-color: var(--detalhes);
     border-radius: 0 32px 32px 32px;
 }
 
@@ -49,29 +54,22 @@ div#logo{
 
 }
 
-.titulo{
-    font-size: 7vw;
-    color: var(--font-light);
-    font-weight: 600;
-    line-height: 7vw;
-    margin-top: 0.6em;
-    margin-bottom: 0.4em;
-}
+
 .traco{
     width: 4vw;
-    height: 11.25px;
-    background: #EFA649
+    height: 0.73vw;
+    background: var(--detalhes)
 }
 
 
 .icones{
-    margin-top: 7em;
+    margin-top: 7vw;
 }
 
 .icones-1{
-    width: 25px;
-    height: 25px;
-    margin-right: 20px;  
+    width: 1.62vw;
+    height: 1.62vw;
+    margin-right: 20px;
 }
 
 nav{
@@ -85,26 +83,25 @@ nav>a{
     text-decoration: none;
     
 }
-
-h2{
-    margin-top: 80px;
-    font-size: 1.3vw;
-    color: var(--font-dark);
+/* Classes genericas para texto*/
+.titulo-small{
+    font-size: 1.7vw;
+    color: var(--font-dark); 
 }
-
-h3{
-    font-size: 2vw;
-    line-height: 100%;
+.titulo-med{
+    font-size: 2.4vw;
+    line-height:139%;
     color: var(--font-light);
     font-weight: 500;
-    margin-top: 20px;
+    letter-spacing: 0.06em;
 }
-
-#section-02>.text{
-    margin-top: 30px;
-}
-#section-02>.link{
-    margin-top: 45px;
+.titulo-big{
+    font-size: 7vw;
+    color: var(--font-light);
+    font-weight: 600;
+    line-height: 7vw;
+    margin-top: 0.6em;
+    margin-bottom: 0.4em;
 }
 
 .text{
@@ -113,9 +110,246 @@ h3{
     font-weight: normal;
 }
 
-.link{
-    font-size: 1.7vw;
-    color: var(--orange);
+.text-med{
+    font-size: 1.5vw;
+    color: var(--font-light);
 }
 
-/* Segunda parte desktop e Tablet */
+.link{
+    font-size: 1.7vw;
+    color: var(--detalhes);
+}
+
+a{
+    text-decoration: none;
+
+}
+
+#section-02>h2{
+    margin-top: 2.20vw;
+}
+
+#section-02>h3{
+    margin-top: 1vw;
+}
+
+#section-02 p{
+    margin-top: 2vw;
+}
+
+
+
+/* Contact desktop e Tablet */
+#part-2{
+    display: flex;
+    background-color: var(--dark-bg);
+    height: 70vw ;
+    width: 100%;
+}
+
+#part-2 section{
+    width: 35%;
+    padding: 5%;
+}
+
+#part-2>section{
+    width: 55%;
+    padding: 10% 8% 0 8%;
+}
+
+#part-2 h2{
+    margin-bottom: 4.50vw;
+}
+
+#part-2 h3{
+    margin-bottom: 3.20vw;
+}
+
+#part-2 p.text{
+    
+    margin-bottom: 8.50vw;
+}
+
+.block-side {
+    display: flex;
+}
+
+.block-side div {
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    margin-right: 5vw;
+}
+
+.block-side div h4{
+    font-weight: 600;
+    font-size: 3vw;
+    margin-right: 1.45vw;
+}
+
+/*Mini cards*/
+
+#mini-card-container{
+    display: flex;
+    position: absolute;
+    top: 110vw ;
+    width: 84%;
+    right: 8%;
+    justify-content: space-between;
+    margin: auto;
+    
+    
+}
+
+.mini-card {
+    display: flex;
+    height: 18.88vw;
+    width: 18.88vw;
+    align-items: center;
+    
+    background-color: #51555C;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mini-card img{
+    width: 3.14vw;
+    height: 3.14vw;
+    margin: auto 20px   ;
+    align-items: center;
+}
+
+.mini-card p {
+    margin: 0px 0px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.06em;
+    padding: 5px;
+}
+
+.mini-card p.text{
+    color: var(--font-light);
+}
+
+.mini-card div{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-mini-card{
+    background-color: var(--detalhes);
+}
+
+.first-mini-card p.text, .first-mini-card p.text-med{
+    color: var(--dark-bg);
+    
+}
+/* Portifolio*/
+
+.port-container{
+  
+    display: flex;
+    margin-top: 10vw;
+    padding: 0 8%;
+    justify-content: space-around;
+}
+
+.port-container div{
+    display: flex;
+    width: 50%;    
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 5vw 0;
+}
+
+
+.port-container section, .port-container h3, .port-container p{
+    margin-top: 3.2vw ;
+    
+}
+
+.port-container section {
+    margin-bottom: -30vw;
+    margin-top: -10vw ;
+}
+.card{
+    border: solid 1px var(--detalhes);
+    height: 30vw;
+    text-align: center;
+}
+
+.card h3{
+    margin-bottom: 50px;
+}
+
+/* Form */
+
+#form {
+    background-color: var(--dark-bg);
+
+    display: flex;
+    height: 45vw;
+}
+
+.sec-form-left, .sec-form-right{
+
+    width: 50%;
+}
+
+.sec-form-left{
+    padding: 10% 5% 0 8% ;
+}
+
+.sec-form-right{
+    padding: 10% 8% 0 0 ;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin:2vw 0px
+}
+
+.form-container label{
+    margin: 10px 0;
+}
+
+input[type=text], input[type=email] {
+    background-color: var(--dark-bg);
+    border: none;
+    border-bottom: 0.5px solid rgba(184, 184, 184, 0.411) ;
+}
+
+.file-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.3vw;
+}
+
+label[for=file]{
+    width: 100%;
+}
+
+input[type=file]{
+    display: none;
+}
+/*Footer*/
+
+.footer{
+    text-align: center;
+    padding: 1.3vw 0;
+    background-color:var(--dark-bg);
+    padding-top: ;
+}
+
+.footer div, .footer p{
+     margin:4vw auto ;
+}
+
+.footer img{
+    margin:0 1.3vw 2.6vw 1.3vw;
+}
+
