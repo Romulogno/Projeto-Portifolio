@@ -10,7 +10,6 @@
     --cinza-escuro:#51555C;
     --azulpsina:rgb(83, 253, 216);
     --laranja:#EFA649;
-    
 }
 
 *{
@@ -26,7 +25,7 @@ body{
     
 }
 
-/* Primeira parte desktop e tablet */
+/* Primeira parte DESKTOP e tablet */
 main{
     display:flex;
     justify-content: center;
@@ -80,9 +79,9 @@ nav{
 nav>a{
     margin: 0 1vw;
     color: var(--font-dark);
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
+
 /* Classes genericas para texto*/
 .titulo-small{
     font-size: 1.7vw;
@@ -139,7 +138,7 @@ a{
 
 
 
-/* Contact desktop e Tablet */
+/* Contact DESKTOP e Tablet */
 #part-2{
     display: flex;
     background-color: var(--dark-bg);
@@ -259,9 +258,11 @@ a{
     width: 50%;    
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-end;
-    margin: 5vw 0;
+    align-items: center;
+    margin: 7vw 0 3vw 0;
 }
+
+
 
 
 .port-container section, .port-container h3, .port-container p{
@@ -319,6 +320,7 @@ input[type=text], input[type=email] {
     background-color: var(--dark-bg);
     border: none;
     border-bottom: 0.5px solid rgba(184, 184, 184, 0.411) ;
+    outline: none;
 }
 
 .file-container{
@@ -336,6 +338,8 @@ label[for=file]{
 input[type=file]{
     display: none;
 }
+
+
 /*Footer*/
 
 .footer{
