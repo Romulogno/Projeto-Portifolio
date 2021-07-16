@@ -288,7 +288,6 @@ a{
 
 #form {
     background-color: var(--dark-bg);
-
     display: flex;
     height: 45vw;
 }
@@ -346,7 +345,6 @@ input[type=file]{
     text-align: center;
     padding: 1.3vw 0;
     background-color:var(--dark-bg);
-    padding-top: ;
 }
 
 .footer div, .footer p{
