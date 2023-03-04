@@ -275,10 +275,10 @@ a{
     margin-top: -10vw ;
 }
 .card{
-    border: solid 1px var(--detalhes);
+    /*border: solid 1px var(--detalhes);*/
     height: 30vw;
     text-align: center;
-    box-shadow: 2px 2px 5px var(--detalhes);
+    box-shadow: 2px 2px 10px var(--detalhes);
 }
 
 .card img{
